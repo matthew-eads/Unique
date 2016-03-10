@@ -1,0 +1,28 @@
+pristine:db81ef47777660f3bfa9589628b8dbf9fc441352d7a3277331f4f206a763e314
+Starting with inventory:
+0000000487-1e144be33954997840196c81232d363b1e4cb78efd1a937a8298026dd810922a
+[TAG 0.4
+ualinuxcn@gmail.com**20150126023434
+ Ignore-this: 871e9c48ef58723429b85dd3cebaddeb
+] 
+hash: 0000000320-94cd7e486ee6aa76817010bf4999563cf3e54c92d271a132d537fceecdaa5c03
+[improvements in Data.List.Unique, removed empty sybmols in the end of lines
+ualinuxcn@gmail.com**20150716100530
+ Ignore-this: 18eb937e96d65811aafc5dd521c4973a
+] 
+hash: 0000008292-7438cfa60699cbd77ac9cd6b9b722460158c9cd38e858a587232667d873e443f
+[added -Werror to .cabal files, fixed its warnings
+ualinuxcn@gmail.com**20150716122118
+ Ignore-this: 31e28a763285ff8f374ee8e96b60f01d
+] 
+hash: 0000002248-58fa1ed7ec4596ee3c1c6c51365aac4ec71782c29335052196dcf4d12e850e30
+[improve formatting-style of source code
+ualinuxcn@gmail.com**20150928023203
+ Ignore-this: 4a9d84597d2d9b1970e6f3aaf86226df
+] 
+hash: 0000002029-baa596f7fba596148c387958a90b900a4aa69a740ceaa7e672d0ef3bb1edf3ab
+[Changed base dependency to < 5 from <= 4.8
+mattaeads@gmail.com**20160310042528
+ Ignore-this: 4e3debef33bc84cdf2189971cac9b79d
+] 
+hash: 0000000346-f3dee81a214e961798c80ba06f07c749ba2cf07cf2047f07fc6bb28cd082834e

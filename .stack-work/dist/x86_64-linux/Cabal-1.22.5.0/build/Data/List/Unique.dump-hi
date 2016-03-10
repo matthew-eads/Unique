@@ -1,0 +1,194 @@
+
+==================== FINAL INTERFACE ====================
+2016-03-10 02:05:24.0401 UTC
+
+interface Uniqu_5QtIhs0FjutFZcRcUfSgP3:Data.List.Unique 7103
+  interface hash: d6f7dcefc90a321afcdccac79ad8bc55
+  ABI hash: 9d88cd7b8104083246fae3ff20a35693
+  export-list hash: 32eafaf4490df70a6fd00f141baaf183
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd9ac9eac0792d150567c26b1c275ef1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.List.Unique.count
+  Data.List.Unique.countElem
+  Data.List.Unique.count_
+  Data.List.Unique.repeated
+  Data.List.Unique.repeatedBy
+  Data.List.Unique.sortUniq
+  Data.List.Unique.unique
+module dependencies:
+package dependencies: base-4.8.2.0*
+                      extra-1.4.3@extra_IqmEYVRG4As1WuHksSqfuY ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Applicative a8ebf5ad4932b411ad7725da68be9801
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.Function 6b13a8d3a5e3bd757a91434dce3fc7f3
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  extra-1.4.3@extra_IqmEYVRG4As1WuHksSqfuY:Data.List.Extra 44bfbba1869650ec25c037f99ae8569d
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+36467f80ea6c982ece903d054d90c27e
+  $wcountElem :: GHC.Classes.Eq a => a -> [a] -> GHC.Prim.Int#
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a w :: GHC.Classes.Eq a w1 :: a w2 :: [a] ->
+                 letrec {
+                   $wgo :: [a] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                   = \ w3 :: [a] ww :: GHC.Prim.Int# ->
+                     case w3 of wild {
+                       [] -> ww
+                       : y ys
+                       -> case GHC.Classes.== @ a w y w1 of wild1 {
+                            GHC.Types.False -> $wgo ys ww
+                            GHC.Types.True -> $wgo ys (GHC.Prim.+# ww 1) } }
+                 } in
+                 $wgo w2 0) -}
+f181e7e5fcacb8e8a17b3bd96940b3ab
+  count :: GHC.Classes.Ord a => [a] -> [(a, GHC.Types.Int)]
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 GHC.Base.build
+                   @ (a, GHC.Types.Int)
+                   (\ @ b1
+                      c :: (a, GHC.Types.Int) -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ [a]
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ (a, GHC.Types.Int)
+                         @ b1
+                         @ [a]
+                         c
+                         (Data.List.Unique.lh @ a))
+                      n
+                      (Data.List.Unique.sg @ a $dOrd eta))) -}
+4856d199331a5c6ee0392f4b3c41a2d5
+  countElem :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a w :: GHC.Classes.Eq a w1 :: a w2 :: [a] ->
+                 case Data.List.Unique.$wcountElem @ a w w1 w2 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+3003fb7329f8a28399b7a7c39ff63e0c
+  count_ :: GHC.Classes.Ord a => [a] -> [(a, GHC.Types.Int)]
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 Data.OldList.sortBy
+                   @ (a, GHC.Types.Int)
+                   (Data.List.Unique.count_1 @ a)
+                   (Data.List.Unique.count @ a $dOrd eta)) -}
+92f759b3fccab7c3fb438e617119e73a
+  count_1 ::
+    (a, GHC.Types.Int) -> (a, GHC.Types.Int) -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS),1*U(A,1*U(U))><S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a x :: (a, GHC.Types.Int) y :: (a, GHC.Types.Int) ->
+                 case x of wild { (,) ds1 y1 ->
+                 case y1 of wild1 { GHC.Types.I# x# ->
+                 case y of wild2 { (,) ds2 y2 ->
+                 case y2 of wild3 { GHC.Types.I# y# ->
+                 GHC.Classes.compareInt# x# y# } } } }) -}
+74702b8a655867929c02d92557f74534
+  lh :: [a] -> (a, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a x :: [a] ->
+                 (GHC.List.head @ a x,
+                  case GHC.List.$wlenAcc @ a x 0 of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 })) -}
+43eecaa61b12b824764581480d2cf657
+  repeated :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 Data.List.Unique.repeatedBy
+                   @ a
+                   $dOrd
+                   Data.List.Unique.repeated1
+                   eta) -}
+0b35f81a1678b13fd40a57ff6231a109
+  repeated1 :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: GHC.Types.Int ->
+                 case ds of wild { GHC.Types.I# x ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># x 1) }) -}
+7314a076ffb022f8575fe9794861022b
+  repeatedBy ::
+    GHC.Classes.Ord a =>
+    (GHC.Types.Int -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C(U)),A),C(C1(U)),A,A,A,A,A,A)><L,C(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dOrd :: GHC.Classes.Ord a
+                   p :: GHC.Types.Int -> GHC.Types.Bool
+                   eta :: [a] ->
+                 letrec {
+                   go :: [[a]] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [[a]] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case p (case GHC.List.$wlenAcc @ a y 0 of ww2 { DEFAULT ->
+                                  GHC.Types.I# ww2 }) of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True -> GHC.Types.: @ a (GHC.List.head @ a y) (go ys) } }
+                 } in
+                 go (Data.List.Unique.sg @ a $dOrd eta)) -}
+70bc49e2b4f17ba591c05055372a661d
+  sg :: GHC.Classes.Ord a => [a] -> [[a]]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*C(C(U)),A),1*C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 Data.OldList.groupBy
+                   @ a
+                   (GHC.Classes.== @ a (GHC.Classes.$p1Ord @ a $dOrd))
+                   (Data.OldList.sort @ a $dOrd eta)) -}
+43f11da550df7cb0a36391636b85efa0
+  sortUniq :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 Data.OldList.sortBy
+                   @ a
+                   (GHC.Classes.compare @ a $dOrd)
+                   (Data.List.Extra.nubOrd @ a $dOrd eta)) -}
+301f8a687fc865872b5f713bad0f941e
+  unique :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(C(C(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a $dOrd :: GHC.Classes.Ord a eta :: [a] ->
+                 Data.List.Unique.unique1
+                   @ a
+                   (Data.List.Unique.sg @ a $dOrd eta)) -}
+387c3cb0e9be5ad8d647588a0949ea06
+  unique1 :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

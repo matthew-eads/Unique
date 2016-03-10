@@ -1,0 +1,246 @@
+
+==================== FINAL INTERFACE ====================
+2016-03-10 02:05:23.818773 UTC
+
+interface Uniqu_5QtIhs0FjutFZcRcUfSgP3:Data.List.UniqueUnsorted 7103
+  interface hash: f30127e71a5f44bd74dffd220458b403
+  ABI hash: c4aa4376f12c9aff53faf4df46d5551a
+  export-list hash: c0cd9866789c502001f30f44723521fb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd9ac9eac0792d150567c26b1c275ef1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.List.UniqueUnsorted.count
+  Data.List.UniqueUnsorted.count_
+  Data.List.UniqueUnsorted.repeated
+  Data.List.UniqueUnsorted.repeatedBy
+  Data.List.UniqueUnsorted.unique
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU*
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_8GjadD03dR57AKCJdr90LD* integer-gmp-1.0.0.0
+                      text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI
+                      unordered-containers-0.2.5.1@unord_8BVO2aaPxdK7U6ObhjDGGE*
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_8GjadD03dR57AKCJdr90LD:Data.Hashable.Generic
+         text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI:Data.Text
+         text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI:Data.Text.Lazy
+         text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI:Data.Text.Show
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI:Data.Text
+                         text-1.2.2.0@text_5c7VCmRXJenGcMPs3kwpkI:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_8BVO2aaPxdK7U6ObhjDGGE:Data.HashMap.Base
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base 587954cac81382204fc5b4bd72428a66
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Strict 13253618bd968d8d0811652abfe39f52
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  hashable-1.2.4.0@hasha_8GjadD03dR57AKCJdr90LD:Data.Hashable 97106635b67211c0b19209be5df40cd2
+import  -/  hashable-1.2.4.0@hasha_8GjadD03dR57AKCJdr90LD:Data.Hashable.Class f7014ab4082968b834da37b716a8434f
+import  -/  unordered-containers-0.2.5.1@unord_8BVO2aaPxdK7U6ObhjDGGE:Data.HashMap.Base 5c08b573e6ed84e8e52ba376126862ee
+import  -/  unordered-containers-0.2.5.1@unord_8BVO2aaPxdK7U6ObhjDGGE:Data.HashMap.Strict 84331ddb9355fbb49022de16a116e8c3
+0061320b8ce54e4b1c633749e6c3be0c
+  count ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) =>
+    [a] -> [(a, GHC.Types.Int)]
+  {- Arity: 3, Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dHashable :: Data.Hashable.Class.Hashable a
+                   $dEq :: GHC.Classes.Eq a
+                   x1 :: [a] ->
+                 Data.List.UniqueUnsorted.count1
+                   @ a
+                   (GHC.Types.[] @ (a, GHC.Types.Int))
+                   (Data.List.UniqueUnsorted.countMap @ a $dHashable $dEq x1)) -}
+657a74a9ec060b74fb13f775205e00f9
+  count1 ::
+    [(a, GHC.Types.Int)]
+    -> Data.HashMap.Base.HashMap a GHC.Types.Int
+    -> [(a, GHC.Types.Int)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+2f3437a6a6aa498082f7e8223646ca25
+  countMap ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) =>
+    [a] -> Data.HashMap.Base.HashMap a GHC.Types.Int
+  {- Arity: 3, Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dHashable :: Data.Hashable.Class.Hashable a
+                   $dEq :: GHC.Classes.Eq a
+                   eta :: [a] ->
+                 letrec {
+                   go :: [a]
+                         -> [GHC.Types.Int]
+                         -> Data.HashMap.Base.HashMap a GHC.Types.Int
+                         -> Data.HashMap.Base.HashMap a GHC.Types.Int
+                     {- Arity: 3, Strictness: <S,1*U><L,1*U><S,1*U> -}
+                   = \ ds :: [a]
+                       _ys :: [GHC.Types.Int]
+                       eta1 :: Data.HashMap.Base.HashMap a GHC.Types.Int ->
+                     case ds of wild {
+                       [] -> eta1
+                       : ipv ipv1
+                       -> case _ys of wild1 {
+                            [] -> eta1
+                            : ipv2 ipv3
+                            -> go
+                                 ipv1
+                                 ipv3
+                                 (Data.HashMap.Strict.unsafeInsertWith
+                                    @ GHC.Types.Int
+                                    @ a
+                                    $dEq
+                                    $dHashable
+                                    GHC.Num.$fNumInt_$c+
+                                    ipv
+                                    ipv2
+                                    eta1) } }
+                 } in
+                 go
+                   eta
+                   Data.List.UniqueUnsorted.count_xs
+                   (Data.HashMap.Base.Empty @ a @ GHC.Types.Int)) -}
+e67ca2b06841492ac7e41b4c25707c5a
+  count_ ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) =>
+    [a] -> [(a, GHC.Types.Int)]
+  {- Arity: 3, Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dHashable :: Data.Hashable.Class.Hashable a
+                   $dEq :: GHC.Classes.Eq a
+                   eta :: [a] ->
+                 case Data.IntMap.Strict.fromListWithKey
+                        @ [a]
+                        (Data.List.UniqueUnsorted.count_3 @ a)
+                        (Data.List.UniqueUnsorted.count_2
+                           @ a
+                           (GHC.Types.[] @ (Data.IntSet.Base.Key, [a]))
+                           (Data.List.UniqueUnsorted.countMap
+                              @ a
+                              $dHashable
+                              $dEq
+                              eta)) of wild {
+                   DEFAULT
+                   -> Data.List.UniqueUnsorted.count_1
+                        @ a
+                        (GHC.Types.[] @ (a, Data.IntSet.Base.Key))
+                        wild
+                   Data.IntMap.Base.Bin dt dt1 l r
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# dt1 0) of wild1 {
+                        GHC.Types.False
+                        -> Data.List.UniqueUnsorted.count_1
+                             @ a
+                             (Data.List.UniqueUnsorted.count_1
+                                @ a
+                                (GHC.Types.[] @ (a, Data.IntSet.Base.Key))
+                                r)
+                             l
+                        GHC.Types.True
+                        -> Data.List.UniqueUnsorted.count_1
+                             @ a
+                             (Data.List.UniqueUnsorted.count_1
+                                @ a
+                                (GHC.Types.[] @ (a, Data.IntSet.Base.Key))
+                                l)
+                             r } }) -}
+951d815ebcfc09546665522c1ea714b9
+  count_1 ::
+    [(a, Data.IntSet.Base.Key)]
+    -> Data.IntMap.Base.IntMap [a] -> [(a, Data.IntSet.Base.Key)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+a7f882ba9299ab8c2d5bebb50ddfdb02
+  count_2 ::
+    [(Data.IntSet.Base.Key, [a])]
+    -> Data.HashMap.Base.HashMap a Data.IntSet.Base.Key
+    -> [(Data.IntSet.Base.Key, [a])]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+e9e0ee9405ec9ceebde9b4aa06039e6d
+  count_3 :: Data.IntSet.Base.Key -> [a] -> [a] -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   ds :: Data.IntSet.Base.Key
+                   x1 :: [a][OneShot]
+                   y :: [a][OneShot] ->
+                 GHC.Base.++ @ a x1 y) -}
+4aef7f70532e594b92e6c5d4b9263c92
+  count_xs :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2 -}
+bc617fa037841b4798a80eb11e4ffe89
+  repeated ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) => [a] -> [a]
+  {- Arity: 3, Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   $dHashable :: Data.Hashable.Class.Hashable a
+                   $dEq :: GHC.Classes.Eq a
+                   eta :: [a] ->
+                 Data.List.UniqueUnsorted.repeatedBy
+                   @ a
+                   $dHashable
+                   $dEq
+                   Data.List.UniqueUnsorted.repeated1
+                   eta) -}
+b28c31095f09ddf9450129dabaf5dfed
+  repeated1 :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: GHC.Types.Int ->
+                 case ds of wild { GHC.Types.I# x1 ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># x1 1) }) -}
+28721fc396ec9c80a1381121c84d49d9
+  repeatedBy ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) =>
+    (GHC.Types.Int -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 4,
+     Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)><L,C(U)><S,1*U> -}
+ec6097e40786076a700f9606fed770c1
+  unique ::
+    (Data.Hashable.Class.Hashable a, GHC.Classes.Eq a) => [a] -> [a]
+  {- Arity: 3, Strictness: <L,U(A,C(U(U)))><L,U(C(C1(U)),A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   $dHashable :: Data.Hashable.Class.Hashable a
+                   $dEq :: GHC.Classes.Eq a
+                   eta :: [a] ->
+                 Data.List.UniqueUnsorted.repeatedBy
+                   @ a
+                   $dHashable
+                   $dEq
+                   Data.List.UniqueUnsorted.unique1
+                   eta) -}
+c0433363da055a53db3026f65089b88f
+  unique1 :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: GHC.Types.Int ->
+                 case ds of wild { GHC.Types.I# x1 ->
+                 case x1 of wild1 {
+                   DEFAULT -> GHC.Types.False 1 -> GHC.Types.True } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
